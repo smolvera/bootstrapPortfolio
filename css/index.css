@@ -1,0 +1,133 @@
+
+/****************** Main Styles *******************/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/************* Navbar Styles ***********/
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* why this overriding contact me btn */
+.nav-link,
+.navbar-brand {
+  color: #011627;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #777;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+/*************** Buttons Styles *****************/
+
+/* Contact Me Buttons */
+.btn-outline-secondary {
+  background-color: transparent;
+  border-color: #011627;
+  /* color: #011627; */
+  position: relative;
+}
+
+/* Contact Me Buttons Animations */
+.btn-outline-secondary:before {
+  content: "";
+  position: absolute;
+  background-color: #83f3ed !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+/* Contact Me Buttons on Hover (Overriding nav-itme)*/
+.home .btn-outline-secondary:hover,
+.nav-item .btn-outline-secondary:hover {
+  background: #83f3ed !important;
+  color: #fff;
+}
+
+/* View Projects Button */
+.btn-secondary {
+  background: #011627;
+  border-color: #011627;
+}
+
+/* View Projects Button on Hover */
+.btn-secondary:hover {
+  color: #83f3ed !important;
+}
+
+/***************** Heading line Styles ****************/
+
+.heading-line {
+  height: 3px;
+  width: 10%;
+  background: #83f3ed;
+}
+
+/***************** Icon Styles ****************/
+.skills i {
+  font-size: 2rem;
+  color: #83f3ed;
+}
+
+/***************** Portfolio Styles ****************/
+.dark {
+  color: #83f3ed;
+  background: #011627;
+  height: 300px;
+}
+
+.dark i {
+  font-size: 1.3rem;
+  color: #83f3ed;
+}
+
+.portfolio .img-fluid {
+  height: 300px;
+  object-fit: cover;
+}
+
+.portfolio .col-lg-3 {
+  position: relative;
+}
+
+/* Why not filtering over image */
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #83f3ed;
+  opacity: 0.05;
+}
+
+/***************** Portfolio Styles ****************/
+.footer {
+  background: #011627;
+  color: #fafaff;
+}
+
+.footer a {
+  color: #fafaff;
+}
