@@ -1,5 +1,5 @@
 # Portfolio
-Today we are going to building a personal portfolio with the CSS framework Bootstrap 4 to show off your performance and progression throughout your coding journey. 
+Today we are going to building a personal portfolio with the CSS framework Bootstrap 4 to show off your performance and progression throughout your coding journey. View Project [Here](https://smolvera.github.io/bootstrapPortfolio/)
 
 ## Getting Started
 - Download a text editor such as visual studio code, sublime, atom (free).
