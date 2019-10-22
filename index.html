@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!------------------------ Add CDN and Style Sheets Below ------------------->
@@ -17,28 +17,33 @@
     <!-- Google Fonts CDN -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
+    <!-- Animate.CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Animate On Scroll CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Style Sheet (Always place last to override Bootstrap default settings-->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <title>Samantha Olvera Portfolio</title>
-
+    <title>Samantha Olvera's Portfolio</title>
 </head>
 
 <body>
-    <!-- Nav Section -->
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <!-------------- Nav Section ----------->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Samantha Olvera</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+            <button class="navbar-toggler .d-none .d-md-block .d-xl-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             <!-- Add justify-content-end here -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                 <!-- Replace class attributes to just say "nav" -->
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <!-- Copy and paste additional links below -->
                     <li class="nav-item">
@@ -56,100 +61,102 @@
         </div>
     </nav>
 
-    <!------------------ Home Setion ----------------->
-    <section id="home" class="home container">
-        <div class="row mt-5">
-            <!-- Add a column that takes up half the page with your image here -->
-            <div class="col-lg-6 mt-5 py-5 pl-5">
-                <img class="img fluid" alt="Samantha Olvera" src="./images/proHeadshot(sm).jpg">
-            </div>
-            <!-- Add a column that takes up half the page with your bio here -->
-            <div class="col-lg-6 my-auto">
-                <div class="row">
-                    <div class="home-content offset-lg-l col-lg-10">
-                        <!-- Title of Section -->
-                        <h1 class="pb-3">About Samantha</h1>
-                        <!-- Bio Info Goes Here -->
-                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis
-                            repellat a fugit optio! Exercitationem optio quam iure, voluptatibus accusamus ab in.
-                            Dolorem quaerat ducimus accusantium, optio praesentium explicabo magni.</p>
-                        <!-- Contact Button -->
-                        <button class="btn btn-lg btn-outline-secondary">Contact Me</button>
-                        <!-- View Work Button -->
-                        <button class="btn btn-lg btn-secondary">View Projects</button>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container mb-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 mt-5 py-5 pl-5">
+                    <img src="./images/proHeadshot(sm).jpg" alt="Samantha Olvera headshot"
+                        class="animated zoomIn img-fluid">
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="row">
+                        <div class="home-content offset-lg-1 colo-lg-10 overflow-hidden">
+                            <h1 class="animated slideInLeft delay-1s pb-3">
+                                Full Stack Web Developer
+                            </h1>
+                            <p class="animated slideInLeft delay-2s pb-3">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Consequuntur in
+                                officiis repellat quaerat, incidunt ipsam tenetur praesentium reiciendis officia dolor,
+                                hic iste. Quasi quae quas, cumque blanditiis commodi soluta quo.</p>
+                            <!-- Contact Button -->
+                            <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary">Contact
+                                Me</button>
+                            <!-- View Work Button -->
+                            <button class="animated zoomIn delay-3s btn btn-lg btn-secondary">View Projects</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!---------------- Skills Section -------------------->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="text-center py-5">
             <h2 class="py-3">Skills</h2>
             <div class="mx-auto heading-line"></div>
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fab fa-wordpress"></i>
                         <h4 class="py-3">Wordpress</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fab fa-html5"></i>
                         <h4 class="py-3">HTML/CSS</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fas fa-code"></i>
                         <h4 class="py-3">Javascript</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fab fa-node-js"></i>
                         <h4 class="py-3">Nodejs</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fab fa-react"></i>
                         <h4 class="py-3">Reactjs</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="animated col-md-4 text-center" data-aos="zoom-in">
                         <i class="fas fa-laptop-code"></i>
                         <h4 class="py-3">Current Project</h4>
-                        <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam enim, ab quos
-                            consectetur, provident, molestiae aliquid consequatur ratione blanditiis nemo officiis
-                            pariatur. Enim quia quod vel dolorum natus maiores recusandae.</p>
+                        <p class="pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto
+                            quibusdam reiciendis animi ipsum quisquam cum! Fugit quo dolore enim temporibus, accusantium
+                            illo nihil minus? Totam fugit quam alias vero?</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!---------------------- Portfolio Section ------------>
-    <section id="portfolio"class="portfolio container-fluid">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio container-fluid bg-light">
         <div class="text-center py-5">
-            <h2 class="py-5">Portfolio</h2>
+            <h2 class="py-3">Portfolio</h2>
             <div class="mx-auto heading-line"></div>
         </div>
-        <!-- Top Row -->
         <div class="row">
-            <div class="col-lg-3 p-0">
+            <div class="col-md-3 p-0">
                 <div class="filter"></div>
                 <img src="./images/test3.jpg" alt="Project 1" class="img-fluid">
             </div>
-            <div class="col-lg-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
                     <h4 class="py-3">Title of Project</h4>
                     <a href="www.github.com/smolvera" class="m-2">
@@ -157,12 +164,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 p-0">
-                <div class="filter">
-                </div>
-                <img src="./images/test3.jpg" alt="Project 2" class="img-fluid">
+            <div class="col-md-3 p-0">
+                <div class="filter"></div>
+                <img src="./images/test3.jpg" alt="Project 1" class="img-fluid">
             </div>
-            <div class="col-lg-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
                     <h4 class="py-3">Title of Project</h4>
                     <a href="www.github.com/smolvera" class="m-2">
@@ -170,10 +176,7 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <!-- Bottom Row -->
-        <div class="row">
-            <div class="col-lg-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
                     <h4 class="py-3">Title of Project</h4>
                     <a href="www.github.com/smolvera" class="m-2">
@@ -181,12 +184,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 p-0">
-                <div class="filter">
-                </div>
-                <img src="./images/test3.jpg" alt="Project 3" class="img-fluid">
+            <div class="col-md-3 p-0">
+                <div class="filter"></div>
+                <img src="./images/test3.jpg" alt="Project 1" class="img-fluid">
             </div>
-            <div class="col-lg-3 dark d-flex align-items-center justify-content-center">
+            <div class="col-md-3 dark d-flex align-items-center justify-content-center">
                 <div class="text-center">
                     <h4 class="py-3">Title of Project</h4>
                     <a href="www.github.com/smolvera" class="m-2">
@@ -194,23 +196,20 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 p-0">
-                <div class="filter">
-                </div>
-                <img src="./images/test3.jpg" alt="Project 4" class="img-fluid">
+            <div class="col-md-3 p-0">
+                <div class="filter"></div>
+                <img src="./images/test3.jpg" alt="Project 1" class="img-fluid">
             </div>
-        </div>
     </section>
 
-    <!----------------- Contact Section ------------------->
-    <section id="contact-me"class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
             <div class="text-center py-5">
                 <h2 class="py-3">Contact Me</h2>
                 <div class="mx-auto heading-line"></div>
             </div>
             <div class="row">
-
                 <div class="col-lg-6">
                     <!-- Google Maps -->
                     <div id="map-container-google-1" class="z-depth-1-half map-container">
@@ -222,7 +221,8 @@
                 <form class="col-lg-6">
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input id="email" class="form-control" type="email" aria-describedby="emailHint" placeholder="Enter Email">   
+                        <input id="email" class="form-control" type="email" aria-describedby="emailHint"
+                            placeholder="Enter Email">
                     </div>
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -232,45 +232,47 @@
                         <label for="message">Message</label>
                         <textarea id="message" class="form-control" placeholder="Enter Message" rows="6"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-secondary btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!------------------ Footer Section ------------------->
-    <footer class="footer">
+    <!-- Footer Section -->
+    <section class="footer mt-5">
         <div class="text-center py-5">
             <h2 class="py-3">Samantha Olvera</h2>
             <div class="mx-auto heading-line"></div>
         </div>
         <div class="row mb-3">
             <div class="col-lg-8 offset-lg-2 text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur architecto obcaecati atque cum, doloribus omnis maiores facilis saepe consequatur nemo dolorem optio non eaque quis qui quaerat in? Eos, ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum velit magnam sapiente ipsa
+                    perferendis ut saepe molestiae, aliquid praesentium, modi officia doloribus placeat nobis. Ullam ut
+                    minima tempora dolore?</p>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Terms & Conditions</a>
+                        <a href="#" class="nav-link">Terms & Conditions</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Contact Me</a>
+                        <a href="#contact" class="nav-link">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="copyright text-center py-3 border-top text-muted">
             <p>Made by Samantha Olvera &copy; 2019</p>
-            <p>Here is where you give credit to any images used <a href="www.photowebsite.com"></a></p>
+            <p>Here is where you give credit to any images used <a href="www.photowebsite.com">Photo Credits</a></p>
         </div>
-    </footer>
+    </section>
 
     <!-- Bootstrap 4.3 jQuery/Javascript CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -281,6 +283,11 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

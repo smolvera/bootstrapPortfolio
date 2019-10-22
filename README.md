@@ -19,6 +19,8 @@ Today we are going to building a personal portfolio with the CSS framework Boots
 - [Bootstrap](https://getbootstrap.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
+- [Animate CSS](https://daneden.github.io/animate.css/)
+- [Animate AOS](https://michalsnik.github.io/aos/)
 
 
 #### Additional Resources
@@ -65,19 +67,50 @@ folders: css, images; files: index.html, README.md(optional), index.css(inside c
     - Add a ```<p>``` describing the skill (optional)
     - Copy and paste to reflect number of skills you want to add.
     - * adjust the ```<i>``` to reflect the icons you want to use.
-9. 
+9. Create the Portfolio Section below the Skills section. 
+    - Add a ```<h2>``` Portfolio as text
+    - Add a ```<div>``` for the dividing line
+    - Add another container with a row inside
+    - Add a col-md-4 with a row and col inside
+    - Add a ```<div>``` with a class of filter
+    - Add an ```<img>``` with a class of "img-fluid
+    - Add another ```<div>``` with the following class attributes: col-md-3 d-flex align-itms-center justify-content-center
+    - Add a ```<div>``` with a ```<h4>``` inside with the text "Title of your Project"
+    - Add an ```<a>``` with a link to view your project
+    - Inside the ```<a>``` add an ```<i>``` with an icon class attribute from [Font Awesome](https://fontawesome.com/) 
+    - Copy the image and title twice, reverse theorder of the title and the image and copy two more times to create two rows of four 
+10. Create the Contact Section
+    - Add a ```<div>``` with a contain class
+    - Add a ```<div>``` with an ```<h2>``` inside with the tect of Contact Me
+    - Add a ```<div>``` with a class of heading-line 
+    - Add a ```<div>``` with a row and a ```<div>``` with a col-lg-6 attributes
+    - Add Google Maps container then add an ```<ifram>``` generated from [googleMaps](https://www.google.com/maps)
+    - Add another ```<div>``` with a col-lg-6 attribute
+    - Add a ```<div class="form-group">```, ```<label for="email">Email</label>```, ```<input id="email" class="form-control" type="email" aria-describedby="emailHint" placeholder="Enter Email">```
+    - Repeat above for the name input and message however change input to ```<textarea>```
+    - Add a ```<button>``` with btn-outline-secondary class attribute
+11. Create the Footer Section
+    - Follow the directions for the contact section but with only one column
+    - Add a ```<h2>``` with your name
+    - Add a ```<p>``` with some placeholder text
+    - Add a ```<ul>``` with ```<li>``` for nav links
+    - Add a ```<div>``` with a class attribute as copyright
+    - Add copyright info and credits in a ```<p>``` tags
+    
 
 ##### Left to do
-- fix contact me button color transitions
-- add margin to the heading-line in skills section
-- add margin to the contact section to add space from submit button
-- Correct display on mobile responsive
+- [x] fix contact me button color transitions
+- [x] add margin to the heading-line in skills section
+- [x] add margin to the contact section to add space from submit button
+- [x] Correct display on mobile responsive
 - finish readme file
 
 
 ##### Deployment
 
 To deploy to github follow these steps: 
+    - Create a new repository on your github account
+    - 
 
 ## Authors
 
